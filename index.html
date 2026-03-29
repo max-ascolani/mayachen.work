@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maya Chen</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+    <meta property="og:title" content="Maya Chen — Product Marketing">
+    <meta property="og:description" content="Product marketer at the intersection of buyer psychology and business strategy. B2B SaaS positioning, GTM, and competitive intelligence.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="headshot.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+                    fontFamily: {
+                        serif: ['Lora', 'Georgia', 'serif'],
+                        body: ['Source Sans 3', 'system-ui', 'sans-serif'],
+                    },
                     colors: {
                         teal: '#2A9D8F',
                         'teal-light': '#3DB8A9',
@@ -30,7 +38,8 @@
         }
     </script>
     <style>
-        * { font-family: 'Inter', system-ui, sans-serif; }
+        body { font-family: 'Source Sans 3', system-ui, sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Lora', Georgia, serif; }
         .pullquote {
             position: relative;
             padding-left: 1.5rem;
@@ -54,14 +63,18 @@
             height: 1px;
             background: linear-gradient(to right, #E8E4DE, transparent);
         }
+        .paper-grain {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+        }
     </style>
 </head>
-<body class="bg-cream text-text-primary antialiased">
+<body class="bg-cream text-text-primary antialiased paper-grain">
 
     <!-- Header - minimal, off-center -->
     <header class="px-6 sm:px-10 lg:px-16 pt-8 pb-4">
         <div class="max-w-5xl mx-auto flex items-center justify-between">
-            <span class="text-text-primary font-semibold">Maya Chen</span>
+            <span class="text-text-primary font-semibold font-serif">Maya Chen</span>
             <a href="mailto:hello@mayachen.work" class="text-sm text-teal hover:text-teal-dark transition-colors">hello@mayachen.work</a>
         </div>
     </header>
@@ -72,7 +85,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 lg:gap-20 items-start">
                 <div>
                     <p class="text-teal text-sm font-medium tracking-wide mb-6">Product Marketing &middot; B2B SaaS &middot; New York</p>
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary leading-[1.1] tracking-tight mb-8">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary leading-[1.1] tracking-tight mb-8 font-serif">
                         I turn complex products<br>into clear buyer decisions.
                     </h1>
                     <p class="text-lg text-text-secondary leading-relaxed max-w-lg">
@@ -97,7 +110,7 @@
             <hr class="fade-rule mb-16">
             <div class="max-w-3xl">
                 <div class="pullquote">
-                    <p class="text-xl sm:text-2xl font-medium text-text-primary leading-relaxed">
+                    <p class="text-xl sm:text-2xl font-medium text-text-primary leading-relaxed font-serif italic">
                         Most companies have a product problem they think is a marketing problem. My job is figuring out which one it actually is -- then fixing the right thing.
                     </p>
                 </div>
@@ -112,19 +125,19 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-10">
                 <div>
-                    <p class="text-teal font-bold text-lg mb-2">Positioning & narrative</p>
+                    <p class="text-teal font-bold text-lg mb-2 font-serif">Positioning & narrative</p>
                     <p class="text-text-secondary leading-relaxed">
                         I figure out what makes your product meaningfully different -- not through brainstorming sessions, but through buyer interviews, competitive analysis, and honest assessment of where you actually win.
                     </p>
                 </div>
                 <div>
-                    <p class="text-teal font-bold text-lg mb-2">Go-to-market strategy</p>
+                    <p class="text-teal font-bold text-lg mb-2 font-serif">Go-to-market strategy</p>
                     <p class="text-text-secondary leading-relaxed">
                         Launches, segment expansions, pricing changes -- I plan the rollout, build the assets, train the team, and measure what happened. Repeatable playbooks, not heroic one-offs.
                     </p>
                 </div>
                 <div>
-                    <p class="text-teal font-bold text-lg mb-2">Sales & competitive intelligence</p>
+                    <p class="text-teal font-bold text-lg mb-2 font-serif">Sales & competitive intelligence</p>
                     <p class="text-text-secondary leading-relaxed">
                         Battlecards, win/loss programs, enablement libraries. I make sure your reps know what they're selling, who they're selling against, and why they should win.
                     </p>
@@ -143,7 +156,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-6 lg:gap-12">
                     <div>
                         <p class="text-sm text-teal font-semibold mb-1">Meridian AI &middot; 2023</p>
-                        <h3 class="text-xl sm:text-2xl font-bold text-text-primary leading-snug">The enterprise pivot nobody believed in</h3>
+                        <h3 class="text-xl sm:text-2xl font-bold text-text-primary leading-snug font-serif">The enterprise pivot nobody believed in</h3>
                     </div>
                     <div>
                         <p class="text-text-secondary leading-relaxed mb-5">
@@ -177,7 +190,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-6 lg:gap-12">
                     <div>
                         <p class="text-sm text-teal font-semibold mb-1">Vantage Cloud &middot; 2021</p>
-                        <h3 class="text-xl sm:text-2xl font-bold text-text-primary leading-snug">The pricing model everyone was afraid to touch</h3>
+                        <h3 class="text-xl sm:text-2xl font-bold text-text-primary leading-snug font-serif">The pricing model everyone was afraid to touch</h3>
                     </div>
                     <div>
                         <p class="text-text-secondary leading-relaxed mb-5">
@@ -211,7 +224,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-6 lg:gap-12">
                     <div>
                         <p class="text-sm text-teal font-semibold mb-1">Meridian AI &middot; 2025</p>
-                        <h3 class="text-xl sm:text-2xl font-bold text-text-primary leading-snug">Getting marketing to actually row in one direction</h3>
+                        <h3 class="text-xl sm:text-2xl font-bold text-text-primary leading-snug font-serif">Getting marketing to actually row in one direction</h3>
                     </div>
                     <div>
                         <p class="text-text-secondary leading-relaxed mb-5">
@@ -245,7 +258,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-6 lg:gap-12">
                     <div>
                         <p class="text-sm text-teal font-semibold mb-1">Beacon Analytics &middot; 2018</p>
-                        <h3 class="text-xl sm:text-2xl font-bold text-text-primary leading-snug">First hire, first everything</h3>
+                        <h3 class="text-xl sm:text-2xl font-bold text-text-primary leading-snug font-serif">First hire, first everything</h3>
                     </div>
                     <div>
                         <p class="text-text-secondary leading-relaxed mb-5">
@@ -315,13 +328,13 @@
                 <div class="bg-cream rounded-lg p-5 border border-border-light">
                     <p class="text-sm text-teal font-semibold mb-2">Reading</p>
                     <p class="text-text-secondary text-sm leading-relaxed">
-                        Re-reading <em>Obviously Awesome</em> by April Dunford for the third time. Every re-read surfaces something new about how positioning actually works in practice versus theory.
+                        Currently re-reading April Dunford's <em>Obviously Awesome</em> and thinking about how category design applies to AI infrastructure products. Most of them are positioning against each other instead of defining a new frame. The ones that win will be the ones that name the problem differently.
                     </p>
                 </div>
                 <div class="bg-cream rounded-lg p-5 border border-border-light">
-                    <p class="text-sm text-teal font-semibold mb-2">Observing</p>
+                    <p class="text-sm text-teal font-semibold mb-2">Writing</p>
                     <p class="text-text-secondary text-sm leading-relaxed">
-                        How AI companies are struggling with positioning. Everyone claims "AI-powered" but few articulate what that actually means for the buyer's day-to-day. The category is ripe for someone to get it right.
+                        Collecting notes for a piece on why most competitive intel programs fail at distribution, not collection. Everyone builds the battlecard. Nobody builds the system that gets reps to actually open it at the right moment in the deal cycle.
                     </p>
                 </div>
             </div>
@@ -332,7 +345,7 @@
     <section class="py-20 sm:py-28 px-6 sm:px-10 lg:px-16">
         <div class="max-w-5xl mx-auto">
             <div class="max-w-2xl">
-                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary mb-4">Get in touch</h2>
+                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary mb-4 font-serif">Get in touch</h2>
                 <p class="text-text-secondary text-lg leading-relaxed mb-8">
                     I'm exploring what's next -- ideally a senior PMM or Head of Product Marketing role at a B2B company that has a genuinely differentiated product and wants to get its story right. Open to NYC, SF, Seattle, or remote.
                 </p>
